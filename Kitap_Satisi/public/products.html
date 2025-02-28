@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler | Kitap Satışı ve Takip</title>
+    <link rel="stylesheet" href="Kitap_Satisi/public/styles/products.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/OIG3.VHknA88ksCTYbc.vM5vy?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Kitapçı Logo">
+        </div>
+        <h1>Ürünler</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="/">Ana Sayfa</a></li>
+                <li><a href="/orders">Siparişler</a></li>
+                <li><a href="/products" class="active">Ürünler</a></li>
+                <li><a href="/contact">İletişim</a></li>
+                <li><a href="/about">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-box-container">
+        <input type="text" placeholder="Kitap ara..." id="search-input">
+        <button class="btn-search">🔍 Ara</button>
+    </section>
+
+    <section class="filters">
+        <h2>Filtrele</h2>
+        <div class="filter">
+            <label for="category">Kategori:</label>
+            <select id="category" name="category">
+                <option value="all">Tümü</option>
+                <option value="fiction">Kurgu</option>
+                <option value="non-fiction">Kurgu Dışı</option>
+                <option value="children">Çocuk</option>
+            </select>
+        </div>
+        <div class="filter">
+            <label for="price-range">Fiyat Aralığı:</label>
+            <select id="price-range" name="price-range">
+                <option value="all">Tümü</option>
+                <option value="0-50">0 - 50 TL</option>
+                <option value="51-100">51 - 100 TL</option>
+                <option value="101-200">101 - 200 TL</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="product-list">
+        <h2>Ürünler</h2>
+        <div class="product-card">
+            <img src="product-image.jpg" alt="Ürün Görseli">
+            <h3>Kitap Adı</h3>
+            <p class="price">Fiyat: 45 TL</p>
+            <p class="description">Kitap hakkında kısa açıklama...</p>
+            <button class="btn-add-to-cart">Sepete Ekle</button>
+        </div>
+        <div class="product-card">
+            <img src="product-image.jpg" alt="Ürün Görseli">
+            <h3>Kitap Adı</h3>
+            <p class="price">Fiyat: 75 TL</p>
+            <p class="description">Kitap hakkında kısa açıklama...</p>
+            <button class="btn-add-to-cart">Sepete Ekle</button>
+        </div>
+        <!-- Daha fazla ürün burada listelenebilir -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kitap Satışı ve Takip. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siparişler</title>
+    <link rel="stylesheet" href="Kitap_Satisi/public/styles/orders.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/OIG3.VHknA88ksCTYbc.vM5vy?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Kitapçı Logo">
+        </div>
+        <h1>Siparişler</h1>
+        <nav>
+            <a href="/">Ana Sayfa</a>
+            <a href="/orders" class="active">Siparişler</a>
+            <a href="/products">Ürünler</a>
+            <a href="/contact">İletişim</a>
+            <a href="/about">Hakkımızda</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Geçmiş Siparişleriniz</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sipariş No</th>
+                    <th>Tarih</th>
+                    <th>Ürün</th>
+                    <th>Adet</th>
+                    <th>Fiyat</th>
+                    <th>Durum</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#1001</td>
+                    <td>27 Şubat 2025</td>
+                    <td>Yapay Zeka Kitabı</td>
+                    <td>1</td>
+                    <td>150₺</td>
+                    <td class="status confirmed">Onaylandı</td>
+                </tr>
+                <tr>
+                    <td>#1002</td>
+                    <td>25 Şubat 2025</td>
+                    <td>Python Programlama</td>
+                    <td>2</td>
+                    <td>300₺</td>
+                    <td class="status shipped">Kargoda</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kitap Satışı ve Takip. Tüm Hakları Saklıdır.</p>
+    </footer>
+</body>
+</html>

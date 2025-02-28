@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Cart Container */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 40px 20px;
+    font-size: 16px;
+}
+
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+/* Cart Header */
+h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+/* Cart Items */
+.cart-items {
+    margin-bottom: 40px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.item-img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item-details {
+    flex-grow: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.item-details h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.item-quantity {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+}
+
+.btn-remove {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-remove:hover {
+    background-color: #d32f2f;
+}
+
+/* Cart Total */
+.cart-total {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart-total h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cart-total .btn-checkout {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-total .btn-checkout:hover {
+    background-color: #0056b3;
+}
+
+/* Back Home Button */
+.btn-back {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+}
+/* Animations */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Slide-right animation */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in animation to cart container */
+.cart-container {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Apply slide-up animation to cart items */
+.cart-items .cart-item {
+    animation: slideUp 0.8s ease-out;
+    animation-delay: 0.2s;
+}
+
+/* Apply slide-right animation to cart total */
+.cart-total {
+    animation: slideRight 1s ease-out;
+    animation-delay: 0.5s;
+}
+
+/* Apply fade-in animation to buttons */
+.btn-remove, .btn-checkout, .btn-back {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Apply hover effect animation to buttons */
+.btn-remove:hover, .btn-checkout:hover, .btn-back:hover {
+    animation: fadeIn 0.5s ease-out;
+}
