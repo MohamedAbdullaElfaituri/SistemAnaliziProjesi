@@ -141,3 +141,19 @@ body {
     }
 }
 
+    
+  .password-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .password-link a {
+    text-decoration: none;
+    color: #007bff; /* Link rengi örneği, istediğin rengi ayarlayabiliriz */
+    font-weight: bold;
+  }
+  
+  .password-link a:hover {
+    text-decoration: underline;
+  }
+

@@ -37,6 +37,9 @@ app.get('/products', (req, res) => {
 app.get('/orders', (req, res) => {
   res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/orders.html'));
 });
+app.get('/detail', (req, res) => {  
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/detail.html'));
+});
 app.listen(port, () => {
   console.log(`Server ${port} portunda çalışıyor...`);
 });

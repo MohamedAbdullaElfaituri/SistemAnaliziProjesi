@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,6 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Body */
 body {
     background-color: #f7f7f7;
     color: #333;
@@ -15,9 +13,8 @@ body {
   
 }
 
-/* Header */
 header {
-    background-color: #2a2a2a; /* Dark header with contrast */
+    background-color: #2a2a2a; 
     color: white;
     padding: 20px;
     display: flex;
@@ -29,9 +26,8 @@ header {
     margin: 0 auto;
 }
 
-/* Logo */
 .logo img {
-    height: 50px; /* Orijinal yükseklik */
+    height: 50px;
     width: auto;
     transition: transform 0.3s ease;
    
@@ -41,7 +37,6 @@ header {
     transform: scale(1.1);
 }
 
-/* Navigation */
 .menu ul {
     list-style: none;
     display: flex;
@@ -54,12 +49,8 @@ header {
     padding: 10px 15px;
     background: #007bff;
     border-radius: 25px;
-    transition: background 0.3s ease;
-    animation: fadeInUp 0.6s ease-out; /* Menü bağlantıları için yukarı kayarak giriş animasyonu */
-    animation-delay: 0.2s; /* Menü elemanlarının sırayla animasyonu */
 }
 
-/* About Section */
 .about {
     background: white;
     padding: 40px;
@@ -68,7 +59,6 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    animation: fadeInUp 1s ease-out; /* About bölümü için yukarı kayarak giriş */
 }
 
 .about h2 {
@@ -84,12 +74,10 @@ header {
     margin-bottom: 15px;
 }
 
-/* Footer */
 footer {
     margin-top: 40px;
     padding: 10px;
     background: #2a2a2a;
     color: white;
-    animation: fadeInUp 1s ease-out; /* Footer için yukarı kayarak giriş */
 }
 
