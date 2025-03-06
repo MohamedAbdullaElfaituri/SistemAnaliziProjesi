@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 
+
 const app = express();
 const port = 3128;
 
@@ -39,6 +40,15 @@ app.get('/orders', (req, res) => {
 });
 app.get('/detail', (req, res) => {  
   res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/detail.html'));
+});
+app.get('/adres', (req, res) => {  
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/adres.html'));
+});
+app.get('/payment', (req, res) => {  
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/payment.html'));
+});
+app.get('/layout', (req, res) => {  
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/layout.html'));
 });
 app.listen(port, () => {
   console.log(`Server ${port} portunda çalışıyor...`);
