@@ -4,12 +4,6 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
 
 body {
     background-color: #f7f7f7;
@@ -19,90 +13,63 @@ body {
   
 }
 
-header {
-    background-color: #2a2a2a; 
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.logo img {
-    height: 50px;
-    width: auto;
-    transition: transform 0.3s ease;
-   
-}
-
-.logo img:hover {
-    transform: scale(1.1);
-}
-
-.menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    background: #007bff;
-    border-radius: 25px;
-}
-
 .search-box-container {
-    margin-top: 30px;
     display: flex;
     justify-content: center;
     gap: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
 .search-box-container input {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.search-box-container button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 8px;
+    font-size: 16px;
+    width: 250px;
+    background: #555;
+    color: white;
+    border-radius: 25px;
+    animation: fadeInLeft 1s ease-out 0.3s;
 }
 
-.search-box-container button:hover {
+.search-box-container .btn-search {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+    animation: fadeInLeft 1s ease-out 0.4s;
+}
+
+.search-box-container .btn-search:hover {
     background-color: #0056b3;
 }
 
 .filters {
     margin: 40px auto;
     padding: 20px;
-    max-width: 400px;
+    max-width: 800px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 .filters h2 {
-    margin-bottom: 20px;
+    flex-basis: 100%; 
+    margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
 }
 
 .filter {
-    margin-bottom: 15px;
+    flex: 1;
+    min-width: 150px; 
 }
 
 .filter label {
@@ -181,7 +148,7 @@ header {
     background-color: #0056b3;
 }
 
-/* Footer */
+    
 footer {
     margin-top: 40px;
     font-size: 14px;

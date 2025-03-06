@@ -126,6 +126,8 @@ h2 {
 
 .cart-total .btn-checkout:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn-back {
@@ -141,7 +143,9 @@ h2 {
 }
 
 .btn-back:hover {
-    background-color: #0056b3;
+    background-color: #5a6268;
+    transform: scale(1.05);
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 @keyframes fadeIn {

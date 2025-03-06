@@ -81,7 +81,7 @@ nav a:hover {
     margin: 20px 0;
     padding: 10px 0;
     position: relative;
-    border-bottom: 2px dashed #007bff; /* Sipariş durumunun altına kesik çizgi */
+    border-bottom: 2px dashed #326aa7; /* Sipariş durumunun altına kesik çizgi */
 }
 
 .order-status::before {
@@ -105,8 +105,8 @@ nav a:hover {
     z-index: 1;
     padding: 10px;
     border-radius: 5px;
-    background: #5704f1;
-    color: #333;
+    background: #4148b1;
+    color: #fffffffd;
     margin: 0 5px; /* Aralarına boşluk ekledik */
 }
 
@@ -147,4 +147,19 @@ footer {
     margin-top: 20px;
     width: 100%;
     border-top: 4px solid #333; /* Alt kısma çizgi ekledik */
+}
+.btn-back {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn-back:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+    transition: background 0.3s ease, transform 0.3s ease;
 }

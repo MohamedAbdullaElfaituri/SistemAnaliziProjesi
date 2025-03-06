@@ -1,7 +1,7 @@
 /* Genel Stiller */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #007bff;
+    background: linear-gradient(135deg, #d8d9db, #3e899e);
     color: #333;
     text-align: center;
     padding: 20px;
@@ -110,7 +110,9 @@ h2 {
 }
 
 .btn-back:hover {
-    background-color: #0056b3;
+    background-color: #5a6268;
+    transform: scale(1.05);
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 

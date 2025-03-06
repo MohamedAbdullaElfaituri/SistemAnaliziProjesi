@@ -1,7 +1,7 @@
 /* Genel Stiller */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #007bff, #00c6ff);
+    background: linear-gradient(135deg, #d8d9db, #3e899e);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +125,9 @@ body {
 }
 
 .btn-back:hover {
-    background-color: #0056b3;
+    background-color: #5a6268;
+    transform: scale(1.05);
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 
@@ -149,7 +151,7 @@ body {
   
   .password-link a {
     text-decoration: none;
-    color: #007bff; /* Link rengi örneği, istediğin rengi ayarlayabiliriz */
+    color: #007bff; 
     font-weight: bold;
   }
   
