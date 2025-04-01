@@ -44,3 +44,5 @@ document.getElementById("country").addEventListener("change", function() {
     })
     .catch(error => console.error("Şehirler yüklenirken hata oluştu:", error));
 });
+
+

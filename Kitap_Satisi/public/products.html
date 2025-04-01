@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ürünler | Kitap Satışı ve Takip</title>
     <link rel="stylesheet" href="Kitap_Satisi/public/styles/products.css">
+    <script defer src="Kitap_Satisi/public/scripts/books.js"></script>
 </head>
 <body>
     <div id="header"></div>
@@ -48,47 +49,9 @@
                 </select>
             </div>
         </section>
-        <section class="product-list">
-            <h2>Kitaplar:</h2>
-
-            <!-- Ürün 1 -->
-            <div class="product-card">
-                <img src="https://via.placeholder.com/150" alt="Yapay Zeka Kitabı">
-                <h3>Yapay Zeka Kitabı</h3>
-                <p class="price">Fiyat: 150 TL</p>
-                <p class="description">Yapay zeka teknolojileri ve uygulamaları hakkında kapsamlı bir rehber.</p>
-                <button class="btn-add-to-cart">Sepete Ekle</button>
-            </div>
-
-            <!-- Ürün 2 -->
-            <div class="product-card">
-                <img src="https://via.placeholder.com/150" alt="Python Programlama Kitabı">
-                <h3>Python Programlama Kitabı</h3>
-                <p class="price">Fiyat: 100 TL</p>
-                <p class="description">Python dilini öğrenmek için başlangıç ve ileri düzey konuları kapsayan bir kaynak.</p>
-                <button class="btn-add-to-cart">Sepete Ekle</button>
-            </div>
-
-            <!-- Ürün 3 -->
-            <div class="product-card">
-                <img src="https://via.placeholder.com/150" alt="CSS Tasarımı Kitabı">
-                <h3>CSS Tasarımı Kitabı</h3>
-                <p class="price">Fiyat: 75 TL</p>
-                <p class="description">Web tasarımında CSS ile stil vermek ve tasarım tekniklerini öğrenin.</p>
-                <button class="btn-add-to-cart">Sepete Ekle</button>
-            </div>
-
-            <!-- Ürün 4 -->
-            <div class="product-card">
-                <img src="https://via.placeholder.com/150" alt="JavaScript Kitabı">
-                <h3>JavaScript Kitabı</h3>
-                <p class="price">Fiyat: 120 TL</p>
-                <p class="description">JavaScript ile etkileşimli web sayfaları oluşturmayı öğrenin.</p>
-                <button class="btn-add-to-cart">Sepete Ekle</button>
-            </div>
-        </section>
-    </div>
-
+       
+            <div id="bookList"></div>
+    
     <footer>
         <p>&copy; 2025 Kitap Satışı ve Takip. Tüm Hakları Saklıdır.</p>
     </footer>

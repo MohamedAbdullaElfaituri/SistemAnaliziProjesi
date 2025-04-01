@@ -1,9 +1,8 @@
-const express = require('express');
-const path = require('path');
-
-
+const express = require("express");
 const app = express();
+const path = require('path');
 const port = 3128;
+
 
 // Public klasörünü sunucuya bağla
 app.use(express.static(path.join(__dirname, '/')));
@@ -50,6 +49,7 @@ app.get('/payment', (req, res) => {
 app.get('/layout', (req, res) => {  
   res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/layout.html'));
 });
+
 app.listen(port, () => {
   console.log(`Server ${port} portunda çalışıyor...`);
 });
