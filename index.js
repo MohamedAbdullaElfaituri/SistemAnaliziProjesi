@@ -39,7 +39,7 @@ app.get('/orders', (req, res) => {
   res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/orders.html'));
 });
 app.get('/detail', (req, res) => {  
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/detail.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/detail.html'));  
 });
 app.get('/adres', (req, res) => {  
   res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/adres.html'));
