@@ -35,14 +35,15 @@ function displayBooks(books) {
         bookDiv.classList.add("book");
 
         // Resim URL'si varsa, ilk geçerli URL'yi alıyoruz
-        const imageUrl = book["Image-URL-M"] || book["Image-URL-S"] || book["Image-URL-L"] || "default-image.jpg";
+        const imageUrl = book["Image-URL-L"] ;
 
         bookDiv.innerHTML = `
-           <img src="${imageUrl || 'https://www.codewithfaraz.com/tools/placeholder?size=220x300'}" alt="${book['Book-Title']}" class="book-image">
-            <h3>${book["Book-Title"] || 'Bilinmeyen Kitap'}</h3>
-            <p><strong>Yazar:</strong> ${book["Book-Author"] || 'Bilinmeyen Yazar'}</p>
-            <p><strong>Yayınevi:</strong> ${book["Publisher"] || 'Bilinmeyen Yayınevi'}</p>
-            <p><strong>Yayın Yılı:</strong> ${book["Year-Of-Publication"] || 'Bilinmeyen Yıl'}</p>
+            <img src="${imageUrl}" alt="${book['Book-Title']}" class="book-image">
+            <h3>${book["Book-Title"]}</h3>
+            <p><strong>Yazar:</strong> ${book["Book-Author"]}</p>
+            <p><strong>Yayınevi:</strong> ${book["Publisher"]}</p>
+            <p><strong>Yayın Yılı:</strong> ${book["Year-Of-Publication"]}</p>
+            <p><strong>Fiyat:</strong> ${book["Price"]}</p>
             <button class="btn-add-to-cart">Sepete Ekle</button>
         `;
 
