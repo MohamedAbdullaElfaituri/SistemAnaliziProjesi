@@ -10,7 +10,7 @@
 <body>
     <div id="header"></div>
     <script>
-        fetch("Kitap_Satisi/public/layout.html") 
+        fetch("Kitap_Satisi/public/views/layout.html") 
             .then(response => response.text())
             .then(data => document.getElementById("header").innerHTML = data);
     </script>
@@ -40,12 +40,12 @@
                 <label for="price-range">Fiyat Aralığı:</label>
                 <select id="price-range" name="price-range">
                     <option value="all">Tümü</option>
-                    <option value="0-50">0 - 50 TL</option>
-                    <option value="51-100">51 - 100 TL</option>
-                    <option value="101-200">101 - 200 TL</option>
-                    <option value="201-300">201 - 300 TL</option>
-                    <option value="301-500">301 - 500 TL</option>
-                    <option value="500+">500+ TL</option>
+                    <option value="0-50">0 - 50 $</option>
+                    <option value="51-100">51 - 100 $</option>
+                    <option value="101-200">101 - 200 $</option>
+                    <option value="201-300">201 - 300 $</option>
+                    <option value="301-500">301 - 500 $</option>
+                    <option value="500+">500+ $</option>
                 </select>
             </div>
         </section>

@@ -1,5 +1,5 @@
 async function loadCSV() {
-    try {
+  
         const response = await fetch("Kitap_Satisi/public/data/books.csv"); // CSV dosyanın yolu
         const data = await response.text();
 
@@ -19,9 +19,7 @@ async function loadCSV() {
         }
 
         displayBooks(books);
-    } catch (error) {
-        console.error("CSV yüklenirken hata oluştu:", error);
-    }
+    
 }
 
 function displayBooks(books) {
@@ -43,7 +41,7 @@ function displayBooks(books) {
             <p><strong>Yazar:</strong> ${book["Book-Author"]}</p>
             <p><strong>Yayınevi:</strong> ${book["Publisher"]}</p>
             <p><strong>Yayın Yılı:</strong> ${book["Year-Of-Publication"]}</p>
-            <p><strong>Fiyat:</strong> ${book["Price"]}</p>
+            <p><strong>Fiyat:</strong> ${book["Price"]} <strong>$</strong></p>
             <button class="btn-add-to-cart">Sepete Ekle</button>
         `;
 

@@ -10,7 +10,7 @@
 <body>
     <div id="header"></div>
     <script>
-        fetch("Kitap_Satisi/public/layout.html") 
+        fetch("Kitap_Satisi/public/views/layout.html") 
             .then(response => response.text())
             .then(data => document.getElementById("header").innerHTML = data);
     </script>

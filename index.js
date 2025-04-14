@@ -10,44 +10,44 @@ app.use(express.static(path.join(__dirname, '/')));
 // Ana sayfayı sunmak için (opsiyonel)
 // Bu route, public klasöründeki index.html dosyasını otomatik olarak sunar.
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/index.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/index.html'));
 });
 
 app.get('/contact', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/contact.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/contact.html'));
 });
 
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/about.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/about.html'));
 });
 
 app.get('/login', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/login.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/login.html'));
 });
 app.get('/signup', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/signup.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/signup.html'));
 });
 
 app.get('/sepet', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/sepet.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/sepet.html'));
 });
 app.get('/products', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/products.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/products.html'));
 });
 app.get('/orders', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/orders.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/orders.html'));
 });
 app.get('/detail', (req, res) => {  
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/detail.html'));  
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/detail.html'));  
 });
 app.get('/adres', (req, res) => {  
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/adres.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/adres.html'));
 });
 app.get('/payment', (req, res) => {  
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/payment.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/payment.html'));
 });
 app.get('/layout', (req, res) => {  
-  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/layout.html'));
+  res.sendFile(path.join(__dirname, 'Kitap_Satisi/public/views/layout.html'));
 });
 
 app.listen(port, () => {
